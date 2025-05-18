@@ -32,7 +32,6 @@ int main() {
     sprite.setPosition(position);
 
     sf::Clock clock;
-
     float speed = 0.005f;
 
     while (window.isOpen()) {
