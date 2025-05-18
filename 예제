@@ -3,7 +3,6 @@
 #include <#1>
 #include <cmath>
 
-// HSV → RGB 변환 함수
 sf::#2 HSVtoRGB(float H, float S, float V, sf::Uint8 A=255) {
     float C = V * S;
     float X = C * (1 - fabs(fmod(H / 60.f, 2) - 1));
@@ -24,7 +23,7 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Follow Mouse & Rainbow Color");
 
     sf::Texture texture;
-    if (!texture.#3("block.jpg"))   // [빈칸 1]
+    if (!texture.#3("block.jpg")) 
         return -1;
 
     sf::Sprite sprite(texture);
@@ -37,7 +36,7 @@ int main() {
     sf::Clock clock;
     float speed = 0.005f;
 
-    while (#5) {   // [빈칸 2]
+    while (#5) {   
         sf::Event event;
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
